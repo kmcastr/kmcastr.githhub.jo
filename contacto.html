@@ -5,41 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos Beeskin</title>
     <link rel="stylesheet" href="contacto.css">
-    <link rel="stylesheet" href="Beeskin.html">
     <script src="https://kit.fontawesome.com/b408879b64.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="contacto.css">
+</head>
 </head>
 <body>
-    <div class="container">
-        <div class="box-info">
-            <h1>CONTÁCTATE CON NOSOTROS</h1>
-            <div class="info">
-                <p> 829-765-5679</p>
-                <p> Beeskin20@gmail.com</p>
-                <p>las colinas, Rep. Dom.</p>
-            </div>
-            <div class="links">
-                <a href=><i class="fa-brands fa-facebook-f"></i></a>
-                <a href=><i class="fa-brands fa-instagram"></i></a>
-                <a href=><i class="fa-brands fa-twitter"></i></a>
-                <a href=><i class="fa-brands fa-linkedin"></i></a>
-            </div>
+</div>
+<header>
+    <h1>Beeskin</h1>
+    <nav class="menu">
+        <ul>
+            <li><a href="beeskin.html">Inicio</a></li>
+            <li><a href="Sobrenosotros.html">Sobre Nosotros</a></li>
+            <li> <a href="Productos.html">Productos</a></li>
+            <li><a href="metodo.html">Metodo de Pago</a></li>
+           
+        </ul>
+    </nav>
+    <div class="wrap">
+        <div class="search">
+          <span class="search-icon" onclick="toggleSearch()">🔍</span>
+          <input type="text" id="search-input" class="searchTerm" placeholder="Search...">
+          <button onclick="search()">Buscar</button>
+          <button onclick="redirectToPage()">Ir a Página</button>
         </div>
-        <form>
-            <div class="input-box">
-                <input type="text" placeholder="Nombre y apellido" required>
-                
-            </div>
-            <div class="input-box">
-                <input type="email" required placeholder="Correo electrónico">
-            </div>
-            <div class="input-box">
-                <input type="text" placeholder="Asunto">
-            </div>
-            <div class="input-box">
-                <textarea placeholder="Escribe tu mensaje..."></textarea>
-            </div>
-            <button type="submit">Enviar mensaje</button>
-        </form>
-    </div>
+      </div>
+      <div id="autocomplete-box"></div>
+      <script src="script.js"></script>
+  
+</header>
+<main>
+<div class="contenedor-formulario">
+    <form class="formulario-contacto">
+      <form action="https://formsubmit.co/karinamariangycastromercedes@gmail.com" method="POST">
+        <h2>Contáctanos</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="Tu correo" required>
+ 
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí" required></textarea>
+        
+        <br>
+    <input class="btn" type="submit" value="Enviar">
+
+    </form>
+   </div>
+ </main>
+
+ <div class="social-icons">
+    <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram"></a>
+    <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook"></a>
+    <a href="https://twitter.com" target="_blank" class="fa fa-twitter"></a>
+  </div>
+    
 </body>
-</html>
+    
